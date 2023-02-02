@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import {Container} from 'react-bootstrap'
 import HomeScreen from './screens/HomeScreen';
 import ProducScreen from './screens/ProducScreen.js';
+import {Switch  } from 'react-router-dom';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path='/product/:id' element={<ProducScreen/>}/>
             </Routes>
           </Container>
+        
           <Container>
             <h3>hadi pour le test</h3>
           </Container>
