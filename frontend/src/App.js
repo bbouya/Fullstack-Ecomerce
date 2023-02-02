@@ -14,6 +14,9 @@ function App() {
           <Container>
            <HomeScreen></HomeScreen>
           </Container>
+          <Container>
+            <h3>hadi pour le test</h3>
+          </Container>
       </main>
       
       <Footer></Footer>
