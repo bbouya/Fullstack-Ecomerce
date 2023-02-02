@@ -4,6 +4,7 @@ import products from '../products.js'
 
 import Product from '../componenets/Product.js';
 
+
 function HomeScreen() {
   return (
     <div>
