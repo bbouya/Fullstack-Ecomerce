@@ -1,6 +1,8 @@
 import React from 'react';
 
 import  {Card} from 'react-bootstrap';
+import Rating from '../componenets/Rating';
+
 
 function Product({product}) {
   return (
@@ -16,7 +18,17 @@ function Product({product}) {
                 </a>
                 <a>
                     <Card.Text as ='div'>
-                        <h1>{product.Price}</h1>
+                        <div className='my-3'>
+                            <Rating value={product.rating} text={`${product.numReviews} reviews`} color={'#f8e825'}>
+
+                            </Rating>
+
+                        </div>
+                    </Card.Text>
+                </a>
+                <a>
+                    <Card.Text as = 'h3'>
+                        ${product.price}
                     </Card.Text>
                 </a>
             </Card.Body>
