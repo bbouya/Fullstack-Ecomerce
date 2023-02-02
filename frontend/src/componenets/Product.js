@@ -2,10 +2,24 @@ import React from 'react';
 
 import  {Card} from 'react-bootstrap';
 
-function Product() {
+function Product({product}) {
   return (
     <Card className='my-3 p-3 rounded'>
-            product
+            <a href={`/product/${product._id}`}>
+                <Card.Img src={product.image}/>
+            </a>
+            <Card.Body>
+                <a href={`/product/${product._id}`}>
+                    <Card.Title as ='div'>
+                        <strong>{product.name}</strong>
+                    </Card.Title>
+                </a>
+                <a>
+                    <Card.Text as ='div'>
+                        <h1>{product.Price}</h1>
+                    </Card.Text>
+                </a>
+            </Card.Body>
     </Card>
   )
 }
